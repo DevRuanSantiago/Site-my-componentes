@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Projeto My Components</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="componentes.css">
+</head>
+
+<body>
+
+    <header class="main_header">
+        <nav class=" main_nav">
+            <a href="#" alt>
+                <img src="imagens/perfil.png" alt="imagem de perfil" class="perfil">
+            </a>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="tipografia.html">tipografia</a></li>
+                <li><a href="cards.html">cards</a></li>
+                <li><a href="listas.html">listas</a></li>
+                <li><a href="formularios.html">formularios</a></li>
+                <li><a href="botoes.html">botões</a></li>
+                <li><a href="tabela.html">tabela</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main_body">
+        <h1>Formularios</h1>
+        <article class="article_bordado">
+        
+        </article>
+
+        <section class="elements">
+            <h2>Entre em contato</h2>
+            <div class="row">
+                <form action="">
+                    <div class="row">
+                        <div>
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="Email" id="Email" autocomplete="off">
+                        </div>
+                    </div>
+              
+                    <label for="Mensagem">Digite sua mensagem</label>
+                    <textarea name="Mensagem" id="Mensagem" rows="6"></textarea>
+                    <input type="submit" value="Enviar" class="btn">
+               
+
+                </form>
+
+                <address>
+                    <p>endereço ficticio  </p>
+                    <p>telefone 000-000-000 </p>
+                    <p>email @emailficticio.com
+                    </p>
+
+                </address>
+                
+            </div>
+            
+            
+        </section>
+
+        <section>
+            
+            <h2>Quiz</h2>
+            <form action="" class="form_quiz">
+                <label for="Tecnologia"> Qual sua técnologia</label>
+             <select name="tecnologia" id="tecnologia">
+                <option value="NULL">Selecione sua técnologia</option>
+                <option value="javascript">javascript</option>
+                <option value="html">html</option>
+                <option value="CSS">CSS</option>
+            </select>
+           <label > Baixa prioridade <input type="Radio" name="priodidade" value="baixa"></label>
+           <label >Media priodidade <input type="radio" name="priodidade"  value ="baixa"></label>
+           <label >Alta priodidade <input type="radio" name="priodidade" value="Alta"></label>
+           <label ><input type="checkbox" name="copy" value="true">Envie-me uma copia</label>
+           <label ><input type="checkbox"  name="humano" value="true">Sou um humano</label>
+           <div class="row">
+            <input type="reset" value="LImpar">
+            <input type="submit" value="Enviar" class="btn">
+           </div>
+
+            </form>
+        
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>

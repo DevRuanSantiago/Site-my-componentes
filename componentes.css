@@ -1,0 +1,249 @@
+.main_header {
+    flex: 0 0 26rem;
+    background-color:rgba(49, 51, 59, .8);
+    min-height: 100VH;
+    position: static;
+
+}
+
+:root {
+    --primary-color: #FF7833;
+    --secondary-color: #31333B;
+    --text-color: #e7e7e7;
+    --body-color: #444856;
+    --dark-color:#020202;
+
+}
+
+body {
+    display: flex;
+    margin: 0;
+    color: var(--text-color);
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    background-image: url(./imagens/bg-unsplash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.main_body {
+    background-color: var(--body-color);
+    background-color:  rgba(68, 72, 86, .6);
+
+    flex-grow: 1;
+    min-height: 100vh;
+    padding: 6.5rem 6rem 100vh;
+    font-size: 2rem;
+
+}
+
+a {
+    color: inherit;
+}
+
+.perfil {
+    max-width: 10rem;
+}
+
+.main_nav {
+    text-align: right;
+    padding: 6.5rem 2.4rem 2.4rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.main_nav ul {
+    padding: 0px;
+    list-style: none;
+}
+
+.main_nav ul a {
+    padding: 1.2rem 0;
+    display: block;
+    text-transform: capitalize;
+
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: padding 0.2s ease-in-out;
+    border-radius: 5px;
+}
+
+.main_nav ul a:hover {
+    background-color: var(--body-color);
+    padding-right: 2rem;
+
+}
+
+.main_nav ul li {
+    border-bottom: 1px solid #bdb0b0;
+    padding: 0.4rem 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-color);
+    margin: 0;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+article {
+    padding: 1em 0;
+}
+
+.article_bordado {
+    border-left: 1px solid var(--primary-color);
+    font-size: 1.1em;
+    padding: 0 0 0 2em;
+    margin-bottom: 2.2em;
+
+}
+
+.elements {
+    padding-top: 2em;
+}
+
+.cards {
+    background-color: var(--secondary-color);
+    max-width: 740px;
+    padding: 0;
+    border: 2px solid white;
+}
+
+.card_container {
+    padding: 0.5em 1em;
+}
+
+.card_title {
+    font-size: 1.75em;
+}
+
+.row {
+    display: flex;
+    gap: 3rem;
+    padding-top: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    margin-bottom: 1rem;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.row *{
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0%;
+}
+.alternate{
+    list-style-type: none;
+    padding-left: 0;
+
+}
+.alternate li:not(:last-child){
+    border-bottom: 2px solid white;
+}
+.emoji{
+  li::marker{
+    content: "😁";
+  }
+}
+.emoji li:nth-child(2)::marker{
+    content: "😕";
+}
+.emoji li:nth-child(3)::marker{
+    content:"😍" ;
+}
+
+input,label,textarea,select{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type="radio"],input[type="checkbox"]{
+    width: auto;
+}
+input,textarea,select{
+    background-color: #Ccc;
+    padding: 1.2rem;
+    border-radius: 5px;
+    margin-bottom: 1.6rem;
+    border: 0;
+}
+.row .row {
+    padding-top: 0;
+}
+.btn{
+    background-color: var(--secondary-color);
+    border: 2px solid var(--dark-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+    border-radius: 1.7rem;
+    padding: 0.8rem 1.2em;
+}
+.btn:hover, .btn:focus{
+    background-color: var(--dark-color);
+}
+.form_quiz{
+    width: calc(50% - 1.5rem);
+}
+.btn + .btn{
+    margin-left: 2rem;
+    
+}
+.btn-big{
+font-size: 1.6em;
+}
+.btn-full{
+    display: inline-block;
+    width: 100%;
+}
+.btn-full + .btn-full{
+    margin-left: 0;
+    margin-top: 2rem;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table td:last-child, table th:last-child{
+    text-align: right;
+}
+.table thead{
+    text-transform: uppercase;
+}
+.table th
+{
+    border-bottom: 2px solid var(--secondary-color);
+    padding: 1.5rem;
+    text-align: left;
+}
+.table-alternate tbody tr:nth-child(odd) {
+    background-color: var(--secondary-color);
+
+}
+.table-verticalLines th:not(:last-child){
+    border-right: 2px solid orange;
+    
+}
